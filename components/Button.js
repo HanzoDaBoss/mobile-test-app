@@ -1,7 +1,7 @@
 import { FontAwesome } from "@expo/vector-icons";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
-export default function Button({ label, dislike, theme }) {
+export default function Button({ label, dislike, theme, onPress }) {
   if (theme === "primary") {
     return (
       <View
@@ -12,7 +12,7 @@ export default function Button({ label, dislike, theme }) {
       >
         <Pressable
           style={[styles.button, { backgroundColor: "#fff" }]}
-          onPress={() => alert(`You ${dislike} like hockey!`)}
+          onPress={onPress}
         >
           <FontAwesome
             name="picture-o"
