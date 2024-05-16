@@ -20,7 +20,7 @@ export default function App() {
         Oh I love Hockey so much
       </Text>
       <View style={styles.footerContainer}>
-        <Button label="Press if you like hockey" dislike="" />
+        <Button theme="primary" label="Press if you like hockey" dislike="" />
         <Button label="Press if you don't like hockey" dislike="don't" />
       </View>
       <StatusBar style="auto" />
